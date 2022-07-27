@@ -1,3 +1,54 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+body {
+    background: url('./components/images/dictionary.jpg') no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Noto Serif', serif;
+}
+
+.header{
+    padding:0;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-h1 {
+    padding-top: 280px;
+    padding-left: 400px;
+    font-weight: bold;
+}
+
+.header-h3 {
+
+    padding-left: 400px;
+}
+
+
+video{
+width:100%;
+object-fit: cover;
+border-radius: 8px;
+}
+
+header{
+    position: absolute;
+    text-align: center;
+}
+
 .app{
     padding: 60px 0 100px;
     max-width: 960px;
@@ -23,9 +74,11 @@
  section {
     box-shadow: 0 30px 50px rgba(65, 50, 100, .08);
     border-radius: 8px;
-    background: #fff;
+    background: rgba(221, 221, 221, 0.9);
     margin-top: 10px;
     padding: 40px;
+
+    
 }
 a{
     color: #6c63ff;
@@ -75,6 +128,13 @@ a{
     border-radius: 50px;
     text-decoration: none;
 }
+
+.phonetic .audio{
+    padding-top: 10px;
+    width: 100%;
+    opacity: 0.5;
+    
+}
 .meaning{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -104,9 +164,20 @@ footer {
     margin: 10px 0;
 }
 
-.synonyms-antonyms p{
-    font-size: 13px;
+.synonym-antonym-p {
+    font-size: 15px;
     line-height: 15px;
-    color: #666;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 10px;
+}
 
+.synonyms-antonyms {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 4px dotted rgb(232, 237, 231);
+}
+
+.synonyms-antonyms ul{
+    margin: 10px;
 }

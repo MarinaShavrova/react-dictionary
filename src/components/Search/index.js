@@ -21,7 +21,7 @@ const Search = ({onChange}) =>{
                         <label>What word do you want to look up?</label>
                         <input onKeyPress={handleKeyPress} value={inputValue}  onChange={e => inputHandler(e)} className="form-control mr-sm-2 bg-light" type="search" placeholder="Search" aria-label="Search" id="search-input"/>
                     </form>
-                <small className="hint">i.e. paris, wine, yoga, coding</small>
+                <small className="hint">i.e. sunset, wine, yoga, coding</small>
             </section>
         </div>
     )

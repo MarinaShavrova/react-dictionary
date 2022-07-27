@@ -1,15 +1,20 @@
 import React from "react";
 import "../../index.css"
-import logoSheCodes from "../images/sheCodes.png"
+import HeaderVideo from "../images/video.mp4";
+import Video from "../Video/Video";
+import "../../index.css"
+
 
 const Header = () =>{
     return (     
-        <section>
+        <section className="header">
+           
             <header className="header"> 
-                <a href="https://www.shecodes.io/" target="_blank" rel="noreferrer">
-                    <img className="logo" src={logoSheCodes} alt="SheCodes Logo"/>
-                </a>
+                <h1 className="header-h1">Welcome Dictionary App</h1>
+                <h3 className="header-h3">The best way to explore the world</h3>
             </header>
+             <Video type = {HeaderVideo}> </Video>
+            
         </section>
     )
 }

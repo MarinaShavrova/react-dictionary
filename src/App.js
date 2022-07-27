@@ -3,7 +3,7 @@ import Description from "./components/Description";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Search from "./components/Search";
-import "./index.css"
+import Video from "./components/Video/Video";
 
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
     <>
     <div className="app">
     <div className="container">
-      <Header/>      
+     
+      <Header/>  
       <Search onChange = {handleCityChange}/>
       <Description inputValue={inputValue}/>   
       <Footer />

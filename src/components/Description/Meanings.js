@@ -19,16 +19,18 @@ const Meanings  = ({meaning, index}) =>{
                                         )})}
                                         
                                     </div>
-                                <div className="synonyms-antonyms">
-                                    <p>Synonyms:</p>
+                                    <p className="synonym-antonym-p">Synonyms:</p>
+                                <div className="synonyms-antonyms">                                    
+                                    <ul>
                                     {meaning.synonyms.map((synonym, index)=>
-                                    <ul  key={index}><li>{synonym}</li></ul>
-                                    )}                                    
+                                   <li className="column" key={index}>{synonym}</li>
+                                    )} 
+                                    </ul>                                   
                                 </div>
+                                     <p className="synonym-antonym-p">Antonyms:</p>
                                     <div className="synonyms-antonyms">
-                                    <p>Antonyms:</p>
                                     {meaning.antonyms.map((antonym, index)=>
-                                    <ul key={index}><li>{antonym}</li></ul>
+                                    <ul className="column" key={index}><li>{antonym}</li></ul>
                                     )}                                    
                                 </div>                                  
                             </section>

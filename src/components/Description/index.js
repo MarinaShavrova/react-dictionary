@@ -67,8 +67,8 @@ const Description = ({inputValue}) =>{
         <section>
             <h1>{word.word}</h1>
                 <div className="phonetic">
-                    <a href={word.audio} target="_blank" rel="noopener noreferrer">Listen</a>
                     <h2> {word.phonetic}</h2>
+                    <audio className="audio" controls src={word.audio}/>             
                 </div>
             </section>                     
                 {word.meanings.map((meaning, index) =>{

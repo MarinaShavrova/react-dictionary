@@ -9,7 +9,7 @@ const Footer = () =>{
             SheCodes            
             </a>
             <span> </span> and is
-            <a href="https://github.com/" target="_blank" rel="norefnoopener noreferrererrer"> open-sourced on GitHub </a>
+            <a href="https://github.com/MarinaShavrova/react-dictionary" target="_blank" rel="norefnoopener noreferrererrer"> open-sourced on GitHub </a>
             and hosted on Netlify.
         </footer>
     )
