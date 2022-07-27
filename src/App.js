@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import Description from "./components/Description";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Search from "./components/Search";
+import "./index.css"
+
 
 function App() {
+
+  const [inputValue, setInputValue] = useState('');
+
+  const handleCityChange = (inputValue) =>{  
+    setInputValue(inputValue);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="app">
+    <div className="container">
+      <Header/>      
+      <Search onChange = {handleCityChange}/>
+      <Description inputValue={inputValue}/>   
+      <Footer />
     </div>
+    </div>
+    </>
   );
 }
 
