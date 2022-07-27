@@ -39,8 +39,15 @@ const Description = ({inputValue}) =>{
             
             let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${inputValue}`;    
             axios.get(apiUrl).then(showDictionaryResult).catch(err => { 
-        alert("The word entered incorrectly! Please enter a word again!");
-        })}
+                console.log(err.response.data.title)
+                console.log(err.response.data.message)
+                console.log(err.response.data.resolution)
+        alert(
+            `${err.response.data.title}. ${err.response.data.message}. ${err.response.data.resolution}
+            `
+        );
+        })
+    }
         } 
 
         const searchPexel = () =>{
